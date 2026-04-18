@@ -1,4 +1,4 @@
-let count1=3;
-let count2=8;
-count=count1+count2;
+let variable1=3;
+let variable2=8;
+count=variable1+variable2;
 console.log(count)
