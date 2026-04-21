@@ -40,3 +40,29 @@ if (tasks === 0) {
   console.log("Много задач");
 }
 
+function sum(a, b) {
+  return `Сумма чисел ${ a } и ${ b } = ${ a + b } `;
+}
+
+console.log(sum(13, 63));
+
+
+function isTaskDone(status){
+  if(status==="выполнена"){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+console.log(isTaskDone("выполнена"));
+console.log(isTaskDone("активна"));
+
+function taskSummary( total , done ){
+  return `
+            Всего: ${ total } | Выполнено: ${ done } | Активных: ${ total - done }
+          `
+}
+
+console.log(taskSummary(20,5))
