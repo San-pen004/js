@@ -67,22 +67,39 @@ function taskSummary( total , done ){
 
 console.log(taskSummary(20,5))
 
+const cities = ["Moscow" , "Saint Petersburg" , "Kazan" , "Kaliningrad"];
+
+cities[2] = "Sochi";
+
+console.log(cities);
+
 let task = {
   id: 1 ,
   title: "Сделать дз" ,
-  status: "Не выполнено" ,
+  status: "Не выполнена" ,
 }
-
 
 console.log(task.id);
 console.log(task.title);
 console.log(task.status);
 
-const tasks = [
-  {id: 1 , title: "Сделать дз" , status: "Не выполнено" },
-  {id: 2 , title: "Убраться в комнате" , status: "Не выполнено" },
-  {id: 3 , title: "Помыть посуду" , status: "Не выполнено" }
-] 
+const assignments = [
+  {id: 1 , title: "Сделать дз" , status: "Не выполнена" },
+  {id: 2 , title: "Убраться в комнате" , status: "Не выполнена" },
+  {id: 3 , title: "Помыть посуду" , status: "Не выполнена" }
+] ;
 
-console.log(tasks.title[0]);
-console.log(tasks.status[1]);
+console.log(assignments[0].title);
+console.log(assignments[1].status);
+
+assignments[0].status = "Выполнена";
+
+assignments[assignments.length] = {id: 4 , title: "Погулять с собакой" , status: "Не выполнена" };
+
+console.log(assignments);
+
+const user = ["Sasha" ,  {id: 1 , title: "Сделать дз" , status: "Не выполнена" },
+  {id: 2 , title: "Убраться в комнате" , status: "Не выполнена" },
+  {id: 3 , title: "Помыть посуду" , status: "Не выполнена" }
+];
+console.log(`Имя пользователя:` , user[0], `| Всего задач:`, assignments.length);
