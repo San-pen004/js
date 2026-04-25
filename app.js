@@ -66,3 +66,23 @@ function taskSummary( total , done ){
 }
 
 console.log(taskSummary(20,5))
+
+let task = {
+  id: 1 ,
+  title: "Сделать дз" ,
+  status: "Не выполнено" ,
+}
+
+
+console.log(task.id);
+console.log(task.title);
+console.log(task.status);
+
+const tasks = [
+  {id: 1 , title: "Сделать дз" , status: "Не выполнено" },
+  {id: 2 , title: "Убраться в комнате" , status: "Не выполнено" },
+  {id: 3 , title: "Помыть посуду" , status: "Не выполнено" }
+] 
+
+console.log(tasks.title[0]);
+console.log(tasks.status[1]);
