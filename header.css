@@ -7,6 +7,7 @@
 }
 
 .header__container{ 
+    padding: 25px 0 25px;
     max-width: 1024px;
     margin: 0 auto;  
     display: flex;
@@ -16,7 +17,6 @@
 }
 
 .header__logo{
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 600;
-    margin: 28px 0 20px;
 }
