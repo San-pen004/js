@@ -1,0 +1,9 @@
+.footer-controls{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 0 14px 0;
+}
+
+.footer-controls__counters{}
+
+.footer-controls__clear{}

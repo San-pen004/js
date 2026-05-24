@@ -1,0 +1,31 @@
+.toolbar{
+    display: flex;
+}
+
+.toolbar__search{
+    font-size: 14px;
+    padding: 10px 15px;
+    border: 1px solid #bebebe;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #9b96a6;
+    margin: 0 14px 0 0;
+}
+
+.toolbar__tabs{}
+
+.toolbar__sort{
+    padding: 10px 15px;
+    border: 1px solid rgba(30, 10, 60, 0.12);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    color: #5e5472;
+    cursor: pointer;
+    transition: background .2s, color .2s, border-color .2s;
+}
+
+
+
+

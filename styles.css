@@ -9,6 +9,7 @@
     color: #5e5472;
     cursor: pointer;
     transition: background .2s, color .2s, border-color .2s;
+    margin: 0 14px 0 0;
 }
 
 .tabs__item:hover {

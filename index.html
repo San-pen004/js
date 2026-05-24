@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./menu.css" />
+    <link rel="stylesheet" href="./container.css" />
+    <link rel="stylesheet" href="./assignment.css" />
+    <link rel="stylesheet" href="./toolbar.css" />
     <link rel="stylesheet" href="./tasks.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./footer-controls.css" />
     <title>Document</title>
   </head>/
   <body>
@@ -15,48 +20,63 @@
         <h1 class="header__logo">TaskLite</h1>
         <nav class="navigate">
           <ul class="menu">
-            <li><a href="#" class="menu__list">To Do</a></li>
+            <li><a href="#" class="menu__list menu__list--active">To Do</a></li>
             <li><a href="#" class="menu__list">Kanban</a></li>
             <li><a href="#" class="menu__list">Привычки</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="tasks">
-        <div class="task__container">
-          <h1 class="task__title">Задачи</h1>
-        </div>
-        <div class="task__container">
-          <form method="post" class="task-entry">
+    <main class="container">
+      <section class="assignment">
+    
+          <h1 class="assignment__title">Задачи</h1>
+
+          <form method="post" class="assignment-entry">
             <input
               type="text"
-              class="task-entry__input"
+              class="assignment-entry__input"
               placeholder="Введите задачу"
             />  
-            <button type="submit" class="task-entry__btn">
+            <button type="submit" class="assignment-entry__btn">
               Добавить
             </button>
+          </form>
+
+
+        <div class="toolbar">
+          <input
+            type="text"
+            class="toolbar__search"
+            placeholder="Поиск задач..."
+          />  
+          <div class="tabs toolbar__tabs">
+            <button class="tabs__item tabs__item--active">Все</button>
+            <button class="tabs__item">Активные</button>
+            <button class="tabs__item">Завершенные</button>
+          </div>
+
+
+          <select class="toolbar__sort">
+            <option value="new">Сначала новые</option>
+            <option value="old">Сначала старые</option>
+          </select>
+
         </div>
-        <div class="task__container">
-          <form method="post" class="task-entry">
-            <input
-              type="text"
-              class="task-entry__input"
-              placeholder="Поиск задач..."
-            />  
-            <button type="submit" class="task-entry__btn">
-              Все
-            </button>
-            <button type="submit" class="task-entry__btn">
-              Активные
-            </button>
-            <button type="submit" class="task-entry__btn">
-              Завершенные
-            </button>
-            <button type="submit" class="task-entry__btn">
-              Сначала старые
-            </button>
+
+
+        <div class="tasks"></div>
+
+
+        <div class="footer-controls">
+          <div class="footer-controls__counters">
+            <span>Всего: 1</span>
+            <span>Активных: 1</span>
+            <span>Выполненных: 0</span>
+          </div>
+          <button type="button" class="button--clear footer-controls__clear">
+              Очистить выполненные
+          </button>
         </div>
       </section>
     </main>

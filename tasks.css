@@ -1,20 +1,2 @@
-.tasks{
-  background: linear-gradient(to right,#e1c9ff,#fffbe9);
-  padding: 71px 0 0 0;
-  height: 430px;
-}
+.tasks{}
 
-.task__container{
-    width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 14px;
-}
-
-.task__title{
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: #221c2a;
-}
