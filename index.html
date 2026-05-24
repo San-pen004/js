@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./tasks.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./footer-controls.css" />
-    <title>Document</title>
-  </head>/
+    <title>Document</title></head
+  >
   <body>
     <header class="header">
       <div class="header__container">
@@ -29,44 +29,36 @@
     </header>
     <main class="container">
       <section class="assignment">
-    
-          <h1 class="assignment__title">Задачи</h1>
+        <h1 class="assignment__title">Задачи</h1>
 
-          <form method="post" class="assignment-entry">
-            <input
-              type="text"
-              class="assignment-entry__input"
-              placeholder="Введите задачу"
-            />  
-            <button type="submit" class="assignment-entry__btn">
-              Добавить
-            </button>
-          </form>
-
+        <form class="assignment-entry">
+          <input
+            type="text"
+            class="assignment-entry__input"
+            placeholder="Введите задачу"
+          />
+          <button type="submit" class="assignment-entry__btn">Добавить</button>
+        </form>
 
         <div class="toolbar">
           <input
             type="text"
             class="toolbar__search"
             placeholder="Поиск задач..."
-          />  
+          />
           <div class="tabs toolbar__tabs">
             <button class="tabs__item tabs__item--active">Все</button>
             <button class="tabs__item">Активные</button>
             <button class="tabs__item">Завершенные</button>
           </div>
 
-
           <select class="toolbar__sort">
             <option value="new">Сначала новые</option>
             <option value="old">Сначала старые</option>
           </select>
-
         </div>
 
-
         <div class="tasks"></div>
-
 
         <div class="footer-controls">
           <div class="footer-controls__counters">
@@ -75,12 +67,12 @@
             <span>Выполненных: 0</span>
           </div>
           <button type="button" class="button--clear footer-controls__clear">
-              Очистить выполненные
+            Очистить выполненные
           </button>
         </div>
       </section>
     </main>
     <footer></footer>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

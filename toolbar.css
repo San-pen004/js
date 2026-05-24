@@ -26,6 +26,11 @@
     transition: background .2s, color .2s, border-color .2s;
 }
 
+.input--error{
+  border-color: #cb6e6e;
+  box-shadow: 0 0 4px rgba(203, 110, 110, 0.3);
+}
+
 
 
 
